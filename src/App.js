@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {
+	ILoveYourWallet_adresse,
+	ILoveYourWallet_abi,
+} from './contract/ILoveYourWallet';
+import Dapp from './Dapp';
+import { useContract } from './context/useContract';
+
+export const ILoveYourWalletContext = React.createContext(null);
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const iLoveYourWallet = useContract(
+		ILoveYourWallet_adresse,
+		ILoveYourWallet_abi
+	);
+	return (
+		<ILoveYourWalletContext.Provider value={iLoveYourWallet}>
+			<Dapp />
+		</ILoveYourWalletContext.Provider>
+	);
 }
 
 export default App;
