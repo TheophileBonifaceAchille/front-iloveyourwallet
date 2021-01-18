@@ -16,7 +16,7 @@ Les Daddys / Mummys peuvent envoyer des tokens LV afin d'attirer l'attention des
 2. Installez ```yarn```
 3. entrez la commande ```yarn start``` pour démarrer l'application en local.
 
-## Packages
+## Packages:
 
 Les dépendances utilisée pour réaliser ce projet:
 
