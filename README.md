@@ -3,10 +3,14 @@
 I Love Your Wallet est une Dapp de rencontre minimaliste, permettant de mettre en relation des Sugar Daddy et Sugar Mummy du monde la crypto de trouver l'amour en réalisant des dons de tokens.
 Les Daddys / Mummys peuvent envoyer des tokens LV afin d'attirer l'attention des Baby et ainsi commencer leur relation.
 
+Les intructions pour l'utilisation sont inscrites sur la page d'acceuil du site.
+  
+
 ## Table des matières
 
 - Démarrage rapide
-- Packages 
+- Packages
+- Déploiement
 - Créateurs
 - Remerciements
 
@@ -26,7 +30,15 @@ Les dépendances utilisée pour réaliser ce projet:
 - Openzeppelin
 - Truffle
 
-### Créateurs:
-Stéphanie Zamord ( aka [Dragon-S20](https://github.com/Dragon-S20) ). Rémy Milazzo (aka [Remy-Mil](https://github.com/Remy-Mil) )
+## Déploiement
+Le site à été déployé grace à plateforme [Netlify](https://www.netlify.com/)
+Vous pouvez retrouver la vertion déployer à l'adresse suivante:  [https://60055fec87c131dd3424eae3--i-love-your-wallet-dating-app.netlify.app/](https://60055fec87c131dd3424eae3--i-love-your-wallet-dating-app.netlify.app/)
+
+## Créateurs:
+Stéphanie ZAMORD ( aka [Dragon-S20](https://github.com/Dragon-S20) )
+
+Rémy MILAZZO (aka [Remy-Mil](https://github.com/Remy-Mil) )
+
+## Remerciements
 
 
