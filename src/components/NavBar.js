@@ -39,7 +39,7 @@ export default function Nav() {
           <Box my={10} as="samp" fontSize="1rem" mr={6}>
             <HStack>
               <Popover>
-                <PopoverTrigger>
+                <PopoverTrigger aria-label="état balance">
                   <Image src={infoStatus} boxSize="45px" objectFit="cover" alt="icon information balance" />
                 </PopoverTrigger>
                 <Portal>
