@@ -83,7 +83,7 @@ export const Register = () => {
                     <Stack>
                       <FormLabel>Pseudo</FormLabel>
                       <Input
-                        id="pseudoBaby"
+                        id="pseudoUser"
                         value={pseudo}
                         onChange={(e) => {
                           setPseudo(e.currentTarget.value);
@@ -95,7 +95,7 @@ export const Register = () => {
                       />
                       <FormLabel>Email</FormLabel>
                       <Input
-                        id="email"
+                        id="emailUser"
                         value={email}
                         onChange={handleEmailChange}
                         variant="filled"
@@ -106,7 +106,7 @@ export const Register = () => {
 
                       <FormLabel>Age</FormLabel>
                       <Input
-                        id="ageBaby"
+                        id="ageUser"
                         value={age}
                         onChange={(e) => {
                           setAge(e.currentTarget.value);
@@ -118,6 +118,7 @@ export const Register = () => {
                       />
                       <FormLabel>Profile</FormLabel>
                       <Select
+                        id="profilUser"
                         placeholder="Choisissez un profil d'utilisateur"
                         variant="filled"
                         onChange={handleSelectProfileChange}
@@ -126,12 +127,18 @@ export const Register = () => {
                         <option value="1">Daddy</option>
                       </Select>
                       <FormLabel>Genre</FormLabel>
-                      <Select placeholder="Choisissez votre genre" variant="filled" onChange={handleSelectGenderChange}>
+                      <Select
+                        id="genderUser"
+                        placeholder="Choisissez votre genre"
+                        variant="filled"
+                        onChange={handleSelectGenderChange}
+                      >
                         <option value="0">Male</option>
                         <option value="1">Female</option>
                       </Select>
                       <FormLabel>Qui rencontrer?</FormLabel>
                       <Select
+                        id="choiceUser"
                         placeholder="Choisissez un profil à rencontrer"
                         variant="filled"
                         onChange={handleSelectTypeWishedChange}
