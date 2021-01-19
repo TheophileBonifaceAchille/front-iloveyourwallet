@@ -1,14 +1,8 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import Home1 from '../images/Home1.jpg';
-import { Box, Center, Image, Text, Flex, VStack, Container, HStack, Button, Heading } from '@chakra-ui/react';
-import { Link } from 'react-router-dom';
-import { ILoveYourWalletContext } from '../App';
-import { Web3Context } from 'web3-hooks';
+import { Box, Image, Text, Flex, VStack, Container, Heading } from '@chakra-ui/react';
 
 export default function ChooseILYW() {
-  const iLoveYourWallet = useContext(ILoveYourWalletContext);
-  const [web3State] = useContext(Web3Context);
-
   return (
     <>
       <Box bg="brand.4" p="5">
