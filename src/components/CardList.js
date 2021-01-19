@@ -6,7 +6,7 @@ const CardList = ({ users }) => {
   return (
     <>
       <Box m={5}>
-        <SimpleGrid columns={[2, null, 3]} spacing="20px">
+        <SimpleGrid columns={[1, 2, 3]} spacing="20px">
           {users &&
             users.map(({ pseudo, age, email, gender, profil, typeWhished }) => {
               return (

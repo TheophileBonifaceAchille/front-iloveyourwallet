@@ -39,8 +39,8 @@ const Card = (props) => {
                 </Container>
               </VStack>
               <Box>
-                <Image src={Baby} boxSize="100px" objectFit="cover" alt="Baby's profil picture" />
-              </Box>
+              <Image src={Baby} boxSize="100px" objectFit="cover" alt="Baby's profil picture" />
+            </Box>
             </Center>
           </Box>
           <Box>
