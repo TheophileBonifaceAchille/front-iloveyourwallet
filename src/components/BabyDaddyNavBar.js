@@ -70,7 +70,7 @@ export default function BabyDaddyNav() {
               {web3State.isLogged && (
                 <Box>
                   <Link to="/">
-                    <Image src={LogOut} boxSize="40px" objectFit="cover" mx={5} />
+                    <Image src={LogOut} boxSize="40px" objectFit="cover" mx={5} alt="exit" />
                   </Link>
                 </Box>
               )}
