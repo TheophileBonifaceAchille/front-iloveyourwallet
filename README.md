@@ -11,7 +11,6 @@ L'accès à l'application est réservé aux personnes majeures, détentrices d'u
 - Packages
 - Déploiement
 - Créateurs
-- Remerciements
 
 ## Démarage rapide:
 
