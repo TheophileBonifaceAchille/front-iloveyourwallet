@@ -35,6 +35,4 @@ Stéphanie ZAMORD ( aka [Dragon-S20](https://github.com/Dragon-S20) )
 
 Rémy MILAZZO (aka [Remy-Mil](https://github.com/Remy-Mil) )
 
-## Remerciements
-
 
