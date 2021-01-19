@@ -28,7 +28,7 @@ Les dépendances utilisée pour réaliser ce projet:
 
 ## Déploiement
 Le site à été déployé grace à plateforme [Netlify](https://www.netlify.com/)
-Vous pouvez retrouver la vertion déployer à l'adresse suivante:  [https://60055fec87c131dd3424eae3--i-love-your-wallet-dating-app.netlify.app/](https://60055fec87c131dd3424eae3--i-love-your-wallet-dating-app.netlify.app/)
+Vous pouvez retrouver la vertion déployer à l'adresse suivante:  [https://i-love-your-wallet-dating-app.netlify.app/](https://i-love-your-wallet-dating-app.netlify.app/)
 
 ## Créateurs:
 Stéphanie ZAMORD ( aka [Dragon-S20](https://github.com/Dragon-S20) )
