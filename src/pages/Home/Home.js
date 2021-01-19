@@ -29,7 +29,7 @@ export const Home = () => {
                 <Text p={4}>Let the Blockchain make you happy!</Text>
                 {iLoveYourWallet !== null && web3State.chainId === 4 && (
                   <HStack spacing="28px" justifyContent="center">
-                    <Button colorScheme="red" variant="solid" mb="10">
+                    <Button colorScheme="red" variant="solid" mb="10" aria-label="inscription">
                       <Link to="/register" p={4}>
                         Inscription
                       </Link>
