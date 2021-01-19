@@ -10,7 +10,6 @@ import {
   Popover,
   PopoverTrigger,
   PopoverContent,
-  PopoverHeader,
   Portal,
   PopoverArrow,
   PopoverCloseButton,
@@ -41,7 +40,7 @@ export default function Nav() {
             <HStack>
               <Popover>
                 <PopoverTrigger>
-                  <Image src={infoStatus} boxSize="45px" objectFit="cover" />
+                  <Image src={infoStatus} boxSize="45px" objectFit="cover" alt="icon information balance" />
                 </PopoverTrigger>
                 <Portal>
                   <PopoverContent>
@@ -69,8 +68,8 @@ export default function Nav() {
                 </Portal>
               </Popover>
               {!web3State.isLogged && (
-                <Button mr={4} onClick={login} colorScheme="none">
-                  <Image boxSize="45px" objectFit="cover" src={LogoMetamask} />
+                <Button mr={4} onClick={login} colorScheme="none" aria-label="Connection Metamask">
+                  <Image boxSize="45px" objectFit="cover" src={LogoMetamask} alt="Logo Metamask" />
                 </Button>
               )}
             </HStack>
