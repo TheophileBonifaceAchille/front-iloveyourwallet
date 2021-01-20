@@ -22,12 +22,12 @@ export const Register = () => {
   const iLoveYourWallet = useContext(ILoveYourWalletContext);
   const history = useHistory();
 
-  const [pseudo, setPseudo] = useState(null);
-  const [age, setAge] = useState(null);
-  const [gender, setGender] = useState(null);
-  const [typeWished, setTypeWished] = useState(null);
-  const [profile, setProfile] = useState(null);
-  const [email, setEmail] = useState(null);
+  const [pseudo, setPseudo] = useState("");
+  const [age, setAge] = useState("");
+  const [gender, setGender] = useState("");
+  const [typeWished, setTypeWished] = useState("");
+  const [profile, setProfile] = useState("");
+  const [email, setEmail] = useState("");
 
   const handleRegister = async () => {
     await iLoveYourWallet.register(pseudo, email, age, profile, gender, typeWished);
@@ -60,9 +60,7 @@ export const Register = () => {
             <Box boxShadow="base" p="6" rounded="md" bg="brand.3" m="4">
               <Center>
                 <VStack>
-                  <Heading as="i" mb={5}>
-                    Inscris-toi en quelques clics!
-                  </Heading>
+                  <Heading mb={5}>Inscris-toi en quelques clics!</Heading>
                   <FormControl isRequired>
                     <Stack>
                       <FormLabel>Pseudo</FormLabel>
