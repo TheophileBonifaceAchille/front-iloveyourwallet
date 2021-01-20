@@ -29,21 +29,21 @@ export const Register = () => {
   const [profile, setProfile] = useState(null);
   const [email, setEmail] = useState(null);
 
-  const handleSelectGenderChange = (e) => {
+ /*const handleSelectGenderChange = (e) => {
     setGender(e.currentTarget.value);
-  };
+  };*/
 
-  const handleSelectTypeWishedChange = (e) => {
+  /*const handleSelectTypeWishedChange = (e) => {
     setTypeWished(e.currentTarget.value);
-  };
+  };*/
 
-  const handleSelectProfileChange = (e) => {
+  /*const handleSelectProfileChange = (e) => {
     setProfile(e.currentTarget.value);
-  };
+  };*/
 
-  const handleEmailChange = (e) => {
+  /*const handleEmailChange = (e) => {
     setEmail(e.currentTarget.value);
-  };
+  };*/
 
   const handleRegister = async () => {
     await iLoveYourWallet.register(pseudo, email, age, profile, gender, typeWished);
@@ -97,7 +97,9 @@ export const Register = () => {
                       <Input
                         id="emailUser"
                         value={email}
-                        onChange={handleEmailChange}
+                        onChange={(e) => {
+                          setEmail(e.currentTarget.value);
+                        }}
                         variant="filled"
                         placeholder="Email"
                         aria-label="email"
@@ -121,7 +123,9 @@ export const Register = () => {
                         id="profilUser"
                         placeholder="Choisissez un profil d'utilisateur"
                         variant="filled"
-                        onChange={handleSelectProfileChange}
+                        onChange={(e) => {
+                          setProfile(e.currentTarget.value)}}
+
                       >
                         <option value="0">Baby</option>
                         <option value="1">Daddy</option>
@@ -131,7 +135,9 @@ export const Register = () => {
                         id="genderUser"
                         placeholder="Choisissez votre genre"
                         variant="filled"
-                        onChange={handleSelectGenderChange}
+                        onChange={(e) => {
+                          setProfile(e.currentTarget.value);
+                        }}
                       >
                         <option value="0">Male</option>
                         <option value="1">Female</option>
@@ -141,7 +147,9 @@ export const Register = () => {
                         id="choiceUser"
                         placeholder="Choisissez un profil à rencontrer"
                         variant="filled"
-                        onChange={handleSelectTypeWishedChange}
+                        onChange={(e) => {
+                          setTypeWished(e.currentTarget.value);
+                        }}
                       >
                         <option value="0">Male</option>
                         <option value="1">Female</option>
