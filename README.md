@@ -22,9 +22,9 @@ L'accès à l'application est réservé aux personnes majeures, détentrices d'u
 
 Les dépendances utilisée pour réaliser ce projet:
 
-- ```yarn add react-router-dom``` - pour le rendu "multipage" en React
-- ```yarn add @chakra-ui/react @emotion/react @emotion/styled framer-motion```- pour ajouter la librairie Chakra UI
-- ```yarn add ethers``` - pour utiliser le web3
+- ```yarn add react-router-dom``` - pour le rendu "multipage" en React ( ici react-router-dom": "^5.2.0" )
+- ```yarn add @chakra-ui/react @emotion/react @emotion/styled framer-motion```- pour ajouter la librairie Chakra UI ( ici "@chakra-ui/react": "^1.1.5" )
+- ```yarn add ethers``` - pour utiliser le web3 ( ici "ethers": "^5.0.26" )
 
 ## Déploiement
 Le site à été déployé grace à plateforme [Netlify](https://www.netlify.com/)

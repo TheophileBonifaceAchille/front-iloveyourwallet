@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 import { Box, Container, Text, HStack, VStack, Button, Image } from '@chakra-ui/react';
 import { Web3Context } from 'web3-hooks';
 import Nav from '../../components/NavBar';
+import ChooseILYW from '../ChooseILYW';
+import HowTo from '../HowUseILYW';
 import Footer from '../../components/Footer';
 import WalletR from '../../images/walletred.png';
 import HappyCoople from '../../images/happyCoople.jpg';
-import ChooseILYW from '../ChooseILYW';
-import HowTo from '../HowUseILYW';
 import { ILoveYourWalletContext } from '../../App';
 
 export const Home = () => {

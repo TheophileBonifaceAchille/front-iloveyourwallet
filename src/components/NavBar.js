@@ -54,9 +54,9 @@ export default function Nav() {
                       <Text fontWeight="bold">
                         Wallet:{' '}
                         {web3State.isLogged ? (
-                          <Text color="Green">{web3State.isMetamask} Connected </Text>
+                          <Text color="Green">{web3State.isMetamask} Connecté </Text>
                         ) : (
-                          <Text color="Red">{web3State.isMetamask} Disconnected </Text>
+                          <Text color="Red">{web3State.isMetamask} Déconnecté </Text>
                         )}
                       </Text>
                       <Text fontWeight="bold">Network name: {web3State.networkName}</Text>

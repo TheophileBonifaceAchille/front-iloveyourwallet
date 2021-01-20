@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { ILoveYourWalletContext } from '../../App';
 import Nav from '../../components/NavBar';
@@ -22,12 +22,12 @@ export const Register = () => {
   const iLoveYourWallet = useContext(ILoveYourWalletContext);
   const history = useHistory();
 
-  const [pseudo, setPseudo] = useState('');
-  const [age, setAge] = useState('');
-  const [gender, setGender] = useState('');
-  const [typeWished, setTypeWished] = useState('');
-  const [profile, setProfile] = useState('');
-  const [email, setEmail] = useState('');
+  const [pseudo, setPseudo] = useState(null);
+  const [age, setAge] = useState(null);
+  const [gender, setGender] = useState(null);
+  const [typeWished, setTypeWished] = useState(null);
+  const [profile, setProfile] = useState(null);
+  const [email, setEmail] = useState(null);
 
   const handleSelectGenderChange = (e) => {
     setGender(e.currentTarget.value);
@@ -52,7 +52,7 @@ export const Register = () => {
       if (iLoveYourWallet !== null) {
         const infoUser = await iLoveYourWallet.infoUser();
 
-        if (!!infoUser) {
+        if (infoUser) {
           clearInterval(interval);
           history.push('/secured-homepage');
         }
