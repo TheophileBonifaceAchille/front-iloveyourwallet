@@ -29,22 +29,6 @@ export const Register = () => {
   const [profile, setProfile] = useState(null);
   const [email, setEmail] = useState(null);
 
- /*const handleSelectGenderChange = (e) => {
-    setGender(e.currentTarget.value);
-  };*/
-
-  /*const handleSelectTypeWishedChange = (e) => {
-    setTypeWished(e.currentTarget.value);
-  };*/
-
-  /*const handleSelectProfileChange = (e) => {
-    setProfile(e.currentTarget.value);
-  };*/
-
-  /*const handleEmailChange = (e) => {
-    setEmail(e.currentTarget.value);
-  };*/
-
   const handleRegister = async () => {
     await iLoveYourWallet.register(pseudo, email, age, profile, gender, typeWished);
 
@@ -124,8 +108,8 @@ export const Register = () => {
                         placeholder="Choisissez un profil d'utilisateur"
                         variant="filled"
                         onChange={(e) => {
-                          setProfile(e.currentTarget.value)}}
-
+                          setProfile(e.currentTarget.value);
+                        }}
                       >
                         <option value="0">Baby</option>
                         <option value="1">Daddy</option>
